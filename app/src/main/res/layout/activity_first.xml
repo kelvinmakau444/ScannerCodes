@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="apps.kelvin.makau.codes.FirstActivity">
+<LinearLayout
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/code_bar" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click the button to scan a new asset"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+</LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        app:rippleColor="@color/material_orange_500"
+        android:id="@+id/newScan"
+        android:src="@drawable/ic_camera"
+        app:backgroundTint="@color/colorPrimary"
+        android:layout_margin="16dp"
+        android:layout_gravity="bottom|center"
+        app:fabSize="normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</android.support.design.widget.CoordinatorLayout>
